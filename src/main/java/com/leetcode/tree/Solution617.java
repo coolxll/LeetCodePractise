@@ -1,0 +1,15 @@
+package com.leetcode.tree;
+
+import com.leetcode.helper.TreeNode;
+
+public class Solution617 {
+    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+        if(t1 == null) return t2;
+        if(t2 == null) return t1;
+        //默认t1 t2都不为null
+        TreeNode mergedTree = new TreeNode(t1.val + t2.val);
+        mergedTree.left = mergeTrees(t1.left, t2.left);
+        mergedTree.right = mergeTrees(t1.right, t2.right);
+        return mergedTree;
+    }
+}
