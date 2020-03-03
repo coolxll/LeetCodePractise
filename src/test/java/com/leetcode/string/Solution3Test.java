@@ -1,5 +1,6 @@
-package com.leetcode;
+package com.leetcode.string;
 
+import com.leetcode.string.Solution3;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.BeforeClass;

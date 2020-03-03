@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.leetcode.listnode;
 
 import com.leetcode.helper.ListNode;
 import org.junit.Assert;

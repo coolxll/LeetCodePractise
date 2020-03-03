@@ -1,5 +1,6 @@
-package com.leetcode;
+package com.leetcode.array;
 
+import com.leetcode.array.Solution4;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
