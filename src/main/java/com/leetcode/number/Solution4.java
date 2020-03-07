@@ -1,4 +1,4 @@
-package com.leetcode.array;
+package com.leetcode.number;
 
 /**
  * Binary Search 二分查找

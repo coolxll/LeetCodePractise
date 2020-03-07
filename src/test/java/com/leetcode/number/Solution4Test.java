@@ -1,9 +1,6 @@
-package com.leetcode.array;
+package com.leetcode.number;
 
-import com.leetcode.array.Solution4;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution4Test {
 
