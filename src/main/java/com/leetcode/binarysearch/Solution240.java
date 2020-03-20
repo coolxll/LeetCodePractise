@@ -1,4 +1,4 @@
-package com.leetcode.archive;
+package com.leetcode.binarysearch;
 
 /**
  * Created by Conan on 2017/2/12.
