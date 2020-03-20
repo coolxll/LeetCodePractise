@@ -1,5 +1,6 @@
 package com.leetcode.archive;
 
+import com.leetcode.binarysearch.BinarySearch;
 import org.junit.Assert;
 import org.junit.Test;
 
