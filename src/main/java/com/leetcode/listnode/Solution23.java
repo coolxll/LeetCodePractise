@@ -4,18 +4,21 @@ import com.leetcode.helper.ListNode;
 import com.leetcode.helper.ListNodeHelper;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Comparator;
+import java.util.Deque;
+import java.util.PriorityQueue;
 
 public class Solution23 {
 
     public ListNode mergeKLists(ListNode[] lists) {
         int n = lists.length;
-        if(n == 0) return null;
-        if(n == 1) return lists[0];
+        if (n == 0) return null;
+        if (n == 1) return lists[0];
         Deque<ListNode> middleResult = new ArrayDeque<>();
-        for (int i = 0; i < n; i++) {
-            if (lists[i] != null) {
-                middleResult.offer(lists[i]);
+        for (ListNode list : lists) {
+            if (list != null) {
+                middleResult.offer(list);
             }
         }
         while (middleResult.size() > 1) {
@@ -68,15 +71,15 @@ public class Solution23 {
         ListNode ans = new ListNode(-1);
         ListNode dummy = ans;
         int length = lists.length;
-        for (int i = 0; i < length; i++) {
-            if(lists[i] != null) {
-                pq.offer(lists[i]);
+        for (ListNode list : lists) {
+            if (list != null) {
+                pq.offer(list);
             }
         }
-        while(!pq.isEmpty()) {
+        while (!pq.isEmpty()) {
             ans.next = pq.poll();
             ans = ans.next;
-            if(ans.next != null) {
+            if (ans.next != null) {
                 pq.offer(ans.next);
             }
         }

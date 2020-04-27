@@ -2,8 +2,6 @@ package com.leetcode.dp;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Solution64Test {
 
     @Test

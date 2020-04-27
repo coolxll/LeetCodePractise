@@ -1,8 +1,8 @@
 package com.leetcode.string;
 
-import javafx.util.Pair;
 
-import java.util.Map;
+import com.leetcode.helper.Pair;
+
 import java.util.PriorityQueue;
 
 public class Solution451 {

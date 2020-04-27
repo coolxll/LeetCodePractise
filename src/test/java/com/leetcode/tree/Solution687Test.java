@@ -2,7 +2,6 @@ package com.leetcode.tree;
 
 import com.leetcode.helper.TreeHelper;
 import com.leetcode.helper.TreeNode;
-import com.leetcode.tree.Solution687;
 import org.junit.Test;
 
 public class Solution687Test {

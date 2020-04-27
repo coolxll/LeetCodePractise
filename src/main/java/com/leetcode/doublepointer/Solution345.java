@@ -3,7 +3,8 @@ package com.leetcode.doublepointer;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Solution345 {
     public String reverseVowels(String s) {

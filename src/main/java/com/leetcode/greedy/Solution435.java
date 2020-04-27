@@ -1,7 +1,6 @@
 package com.leetcode.greedy;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class Solution435 {
     public int eraseOverlapIntervals(int[][] intervals) {

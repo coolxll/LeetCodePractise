@@ -5,8 +5,6 @@ import com.leetcode.helper.TreeNode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Solution437Test {
 
     Solution437 solution437 = new Solution437();

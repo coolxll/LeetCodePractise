@@ -1,11 +1,8 @@
 package com.leetcode.tree;
 
 import com.leetcode.helper.TreeHelper;
-import com.leetcode.number.Solution7;
 import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution98Test {
 

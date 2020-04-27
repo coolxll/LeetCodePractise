@@ -1,18 +1,12 @@
 package com.leetcode.string;
 
-import com.leetcode.string.Solution3;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
-
-import java.util.HashMap;
-
-import static org.junit.Assert.*;
 
 public class Solution3Test {
 
-    private Solution3 solution3  = new Solution3();;
+    private Solution3 solution3 = new Solution3();
 
 
     @Before
@@ -23,7 +17,6 @@ public class Solution3Test {
     @Test
     public void test1() {
         int abcabcbb = solution3.lengthOfLongestSubstring("abcabcbb");
-        HashMap map = new HashMap<>();
         Assert.assertEquals(abcabcbb, 3);
         System.out.println(solution3.getCount());
     }

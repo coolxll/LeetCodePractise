@@ -2,7 +2,6 @@ package com.leetcode.number;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
 
 public class Solution7 {
     //其实可以不用队列

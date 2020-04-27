@@ -2,8 +2,6 @@ package com.leetcode.greedy;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Solution452Test {
 
     @Test

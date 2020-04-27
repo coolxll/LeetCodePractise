@@ -2,10 +2,7 @@ package com.leetcode.tree;
 
 import com.leetcode.helper.TreeHelper;
 import com.leetcode.helper.TreeNode;
-import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Solution572Test {
 
