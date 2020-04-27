@@ -1,6 +1,7 @@
 package com.leetcode.string;
 
-import javafx.util.Pair;
+
+import com.leetcode.helper.Pair;
 
 import java.util.Map;
 import java.util.PriorityQueue;
