@@ -1,7 +1,6 @@
 package com.leetcode.bfs;
 
-
-import javafx.util.Pair;
+import com.leetcode.helper.Pair;
 
 import java.util.ArrayDeque;
 import java.util.HashSet;
