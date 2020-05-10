@@ -44,6 +44,7 @@ public class Solution23 {
 
 
     //迭代
+    @SuppressWarnings("DuplicatedCode")
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(-1);
         ListNode curr = dummy;

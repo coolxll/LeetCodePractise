@@ -10,9 +10,7 @@ import java.util.Queue;
 public class Solution127 {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         HashSet<String> dict = new HashSet<>(); //用set去重，尽管题目里说List中无重复
-        for (String s : wordList) {
-            dict.add(s);
-        }
+        dict.addAll(wordList);
         if (!dict.contains(endWord)) { //Fast fail
             return 0;
         }

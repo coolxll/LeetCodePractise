@@ -22,7 +22,7 @@ public class Solution226 {
     //BFS
     public TreeNode inverseTreeIteration(TreeNode root) {
         if (root == null) return null;
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
             TreeNode current = queue.poll();

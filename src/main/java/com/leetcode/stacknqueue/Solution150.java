@@ -8,7 +8,7 @@ import java.util.Deque;
 
 public class Solution150 {
     public int evalRPN(String[] tokens) {
-        Deque<Integer> deque = new ArrayDeque();
+        Deque<Integer> deque = new ArrayDeque<>();
         for (String token : tokens) {
             if (!isOperator(token)) {
                 deque.push(Integer.valueOf(token));
@@ -45,6 +45,7 @@ public class Solution150 {
         if (c == '+') return true;
         if (c == '-') return true;
         if (c == '*') return true;
+        //noinspection RedundantIfStatement
         if (c == '/') return true;
         return false;
     }

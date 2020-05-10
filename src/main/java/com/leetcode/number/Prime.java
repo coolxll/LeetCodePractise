@@ -8,7 +8,7 @@ public class Prime {
 
     public static void main(String[] args) {
         if(primes == null) {
-            primes = new ArrayList<Integer>();
+            primes = new ArrayList<>();
             primes.add(2);
         }
 

@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Solution3 {
     private int count = 0;
-    private Set hashSet = new HashSet();
+    private Set<Character> hashSet = new HashSet<>();
 
     public int lengthOfLongestSubstring(String s) {
         int longestLength = 0;
