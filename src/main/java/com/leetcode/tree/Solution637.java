@@ -2,7 +2,6 @@ package com.leetcode.tree;
 
 import com.leetcode.helper.TreeHelper;
 import com.leetcode.helper.TreeNode;
-import com.sun.jmx.remote.internal.ArrayQueue;
 import org.junit.Test;
 
 import java.util.ArrayList;

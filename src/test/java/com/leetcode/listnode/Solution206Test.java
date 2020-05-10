@@ -4,8 +4,6 @@ import com.leetcode.helper.ListNode;
 import com.leetcode.helper.ListNodeHelper;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Solution206Test {
 
     @Test

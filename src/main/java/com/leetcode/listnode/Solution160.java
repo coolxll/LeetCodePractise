@@ -2,8 +2,6 @@ package com.leetcode.listnode;
 
 import com.leetcode.helper.ListNode;
 
-import java.util.HashSet;
-
 public class Solution160 {
     //走完链表 走另一个链表 形成回环
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

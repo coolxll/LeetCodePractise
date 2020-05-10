@@ -36,9 +36,9 @@ public class ListNodeHelper {
             return "[]";
         }
 
-        String result = "";
+        StringBuilder result = new StringBuilder();
         while (node != null) {
-            result += Integer.toString(node.val) + ", ";
+            result.append(node.val).append(", ");
             node = node.next;
         }
         return "[" + result.substring(0, result.length() - 2) + "]";

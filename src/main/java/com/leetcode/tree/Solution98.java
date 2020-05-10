@@ -16,10 +16,7 @@ public class Solution98 {
         if(!isValidBST(root.left,root.val,lower)) {
             return false;
         }
-        if(!isValidBST(root.right,upper,root.val)) {
-            return false;
-        }
-        return true;
+        return isValidBST(root.right, upper, root.val);
     }
 
 }

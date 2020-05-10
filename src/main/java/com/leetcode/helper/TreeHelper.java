@@ -70,7 +70,7 @@ public class TreeHelper {
                 continue;
             }
 
-            output += String.valueOf(node.val) + ",";
+            output += node.val + ",";
             if(!(node.left==null && node.right ==null)) {
                 nodeQueue.add(node.left);
                 nodeQueue.add(node.right);

@@ -1,7 +1,6 @@
 package com.leetcode.greedy;
 
 import java.util.Arrays;
-import java.util.Collections;
 
 public class Solution455 {
     public int findContentChildren(int[] g, int[] s) {

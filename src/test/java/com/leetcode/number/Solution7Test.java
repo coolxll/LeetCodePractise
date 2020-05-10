@@ -3,8 +3,6 @@ package com.leetcode.number;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class Solution7Test {
 
     @Test

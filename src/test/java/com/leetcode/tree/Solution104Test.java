@@ -2,7 +2,6 @@ package com.leetcode.tree;
 
 import com.leetcode.helper.TreeHelper;
 import com.leetcode.helper.TreeNode;
-import com.leetcode.tree.Solution104;
 import org.junit.Assert;
 import org.junit.Test;
 
