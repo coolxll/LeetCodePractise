@@ -30,7 +30,7 @@ public class Solution234 {
         if(head == null || head.next == null) return true; //先判断特殊情况，0个或1个元素
         //快慢指针遍历
         ListNode slow = head, fast=head; //slow 1步 fast 两步
-        Deque<Integer> deque = new ArrayDeque();
+        Deque<Integer> deque = new ArrayDeque<>();
         while(fast != null && fast.next != null) {
             deque.offer(slow.val);
             slow = slow.next;

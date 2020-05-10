@@ -13,7 +13,7 @@ import java.util.Stack;
  */
 public class StringCalculator {
     char[] opArray = new char[] {'+','-','*','/','(',')'};
-    Stack<Double> numStack = new Stack();
+    Stack<Double> numStack = new Stack<>();
     Stack<Character> opStack = new Stack<>();
     // 1+2*3-3*4-5
 

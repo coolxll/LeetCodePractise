@@ -15,8 +15,8 @@ public class Solution232 {
 
         /** Initialize your data structure here. */
         public MyQueue() {
-            s1 = new Stack();
-            s2 = new Stack();
+            s1 = new Stack<>();
+            s2 = new Stack<>();
         }
 
         /** Push element x to the back of queue. */

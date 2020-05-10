@@ -16,7 +16,7 @@ public class Solution227 { //这个算法比较慢，但能正确算出答案
      */
 
     public int calculate(String expression) {
-        Deque<Integer> s = new ArrayDeque();
+        Deque<Integer> s = new ArrayDeque<>();
         int num = 0;
         char sign = '+';  //相当于把表达式改成 0 + expression
         for (int i = 0; i < expression.length(); i++) {
@@ -71,6 +71,7 @@ public class Solution227 { //这个算法比较慢，但能正确算出答案
         if (ch == '+') return true;
         if (ch == '-') return true;
         if (ch == '*') return true;
+        //noinspection RedundantIfStatement
         if (ch == '/') return true;
         return false;
     }

@@ -10,8 +10,8 @@ public class Solution155 {
 
         /** initialize your data structure here. */
         public MinStack() {
-            stack1 = new Stack();
-            stack2 = new Stack();
+            stack1 = new Stack<>();
+            stack2 = new Stack<>();
         }
 
         public void push(int x) {

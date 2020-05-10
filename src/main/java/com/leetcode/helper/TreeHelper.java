@@ -59,18 +59,18 @@ public class TreeHelper {
             return "[]";
         }
 
-        String output = "";
+        StringBuilder output = new StringBuilder();
         Queue<TreeNode> nodeQueue = new LinkedList<>();
         nodeQueue.add(root);
         while(!nodeQueue.isEmpty()) {
             TreeNode node = nodeQueue.remove();
 
             if (node == null) {
-                output += "null,";
+                output.append("null,");
                 continue;
             }
 
-            output += node.val + ",";
+            output.append(node.val).append(",");
             if(!(node.left==null && node.right ==null)) {
                 nodeQueue.add(node.left);
                 nodeQueue.add(node.right);
