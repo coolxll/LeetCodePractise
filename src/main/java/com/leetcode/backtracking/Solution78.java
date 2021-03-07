@@ -1,4 +1,4 @@
-package com.leetcode.binarysearch;
+package com.leetcode.backtracking;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -46,4 +46,24 @@ public class Solution78 {
         }
         return result;
     }
+
+    public List<List<Integer>> subsets_backtracking(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> tmp = new ArrayList<>();
+        backtrack(nums,0, result, tmp);
+        return result;
+    }
+
+    private void backtrack(int[] nums, int start,  List<List<Integer>> result, List<Integer> tmp) {
+        if(start == nums.length) {
+            result.add(new ArrayList<>(tmp));
+            return;
+        }
+        tmp.add(nums[start]);
+        backtrack(nums,start+1,result,tmp);
+        tmp.remove(tmp.size() - 1);
+        backtrack(nums,start+1,result,tmp);
+    }
+
+
 }
