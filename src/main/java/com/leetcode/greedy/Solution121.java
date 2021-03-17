@@ -13,4 +13,14 @@ public class Solution121 {
         }
         return profit;
     }
+
+    public int maxProfit1(int[] prices) {
+        if(prices == null || prices.length <= 1) return 0;
+        int buy1 = -prices[0],sell1 = 0;
+        for (int i = 1; i < prices.length; i++) {
+            buy1 = Math.max(-prices[i], buy1);
+            sell1 = Math.max(sell1, prices[i] + buy1);
+        }
+        return sell1;
+    }
 }

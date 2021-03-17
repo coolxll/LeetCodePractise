@@ -12,7 +12,6 @@ public class Solution88 {
                 nums1[indexMerge--] = nums2[index2--];
             } else if(index2 < 0) {
                 nums1[indexMerge--] = nums1[index1--];
-                continue;
             } else if (nums1[index1] > nums2[index2]) {
                 nums1[indexMerge--] = nums1[index1--];
             } else {

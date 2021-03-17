@@ -56,4 +56,10 @@ public class Solution20 {
         boolean valid = isValid("()");
         Assert.assertTrue(valid);
     }
+
+    @Test
+    public void test1() {
+        boolean valid = isValid("([)]");
+        Assert.assertFalse(valid);
+    }
 }

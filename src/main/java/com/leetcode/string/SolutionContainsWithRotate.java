@@ -22,4 +22,21 @@ public class SolutionContainsWithRotate {
         boolean containsByConcat = isContainsByConcat("AABCD", "CDAA");
         Assert.assertTrue(containsByConcat);
     }
+
+    public boolean judge (String str) {
+        // write code here
+        char[] charArray = str.toCharArray();
+        int l=0,r=charArray.length-1;
+        while(l<r) {
+            l++;
+            r--;
+            if(charArray[l] != charArray[r]) return false;
+        }
+        return true;
+    }
+
+    @Test
+    public void test() {
+        Assert.assertFalse(judge("ababb"));
+    }
 }
