@@ -53,10 +53,54 @@ public class Solution123 {
         return sell2;
     }
 
+
+    public int maxProfit1 (int[] prices) {
+        // write code here
+        if(prices == null) return 0;
+        int len = prices.length;
+        int[] profit1 = new int[len];
+        int[] profit2 = new int[len];
+        int min = prices[0];
+        int profit = 0;
+        for(int i=0;i<len;i++) {
+            min = Math.min(min,prices[i]);
+            profit = Math.max(profit,prices[i] - min);
+            profit1[i] = profit;
+        }
+        int max = prices[len-1];
+        for(int j=len-1;j>0;j--) {
+            max = Math.max(max,prices[j]);
+            profit = max - prices[j];
+            profit2[j] = profit;
+        }
+        for(int i=0;i<len;i++) {
+            profit = Math.max(profit,profit1[i] + profit2[i]);
+        }
+        return profit;
+    }
+
+
+
+
     @Test
     public void test() {
         int[] input = new int[] {1,2,3};
         Assert.assertEquals(maxProfit_brute(input),2);
 
     }
+
+    @Test
+    public void test1() {
+        int[] input = new int[] {8,9,3,5,1,3};
+        int profit = maxProfit1(input);
+        Assert.assertEquals(4,profit);
+    }
+
+    @Test
+    public void test2() {
+        int[] input = new int[] {2,4,10,57,30,82,90,12,5,13};
+        int profit = maxProfit1(input);
+        Assert.assertEquals(115,profit);
+    }
 }
+

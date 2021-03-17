@@ -16,13 +16,12 @@ public class Solution155 {
 
         public void push(int x) {
             stack1.push(x);
-            if(stack1.isEmpty()) {
+            if(stack2.isEmpty()) {
                 stack2.push(x);
             } else {
-                int cur = stack2.peek();
+                int cur = stack1.peek();
                 stack2.push(Math.min(x, cur));
             }
-
         }
 
         public void pop() {
