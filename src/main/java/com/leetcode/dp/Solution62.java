@@ -1,26 +1,28 @@
 package com.leetcode.dp;
 
+import java.util.Arrays;
+
 public class Solution62 {
 
-//    private int[][] dp;
-//
-//    public int uniquePaths(int m, int n) {
-//        dp = new int[m][n];
-//        for(int[] a:dp) Arrays.fill(a,-1);
-//        return up(m - 1, n - 1);
-//    }
-//
-//    private int up(int m, int n) {
-//        if(dp[m][n] != -1) {
-//            return dp[m][n];
-//        }
-//        int sum = 1;
-//        if(m > 0 && n > 0) sum = up(m -1, n) + up(m, n -1);
-//        else if(m > 0) sum = up(m - 1, n);
-//        else if(n > 0) sum = up(m, n - 1);
-//        dp[m][n] = sum;
-//        return sum;
-//    }
+    private int[][] dp;
+
+    public int uniquePaths1(int m, int n) {
+        dp = new int[m][n];
+        for(int[] a:dp) Arrays.fill(a,-1);
+        return up(m - 1, n - 1);
+    }
+
+    private int up(int m, int n) {
+        if(dp[m][n] != -1) {
+            return dp[m][n];
+        }
+        int sum = 1;
+        if(m > 0 && n > 0) sum = up(m -1, n) + up(m, n -1);
+        else if(m > 0) sum = up(m - 1, n);
+        else if(n > 0) sum = up(m, n - 1);
+        dp[m][n] = sum;
+        return sum;
+    }
 
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m][n];

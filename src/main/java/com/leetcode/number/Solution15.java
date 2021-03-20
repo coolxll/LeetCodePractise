@@ -42,14 +42,14 @@ public class Solution15 {
     private int moveBackward(int[] nums, int r) {
         do {
             r--;
-        } while (nums[r] == nums[r + 1] && r > 0);
+        } while (nums[r] == nums[r + 1] && r > 0); //跳过相同的
         return r;
     }
 
     private int moveForward(int[] nums,int l) {
         do {
             l++;
-        } while(nums[l]==nums[l-1] && l < nums.length - 1);
+        } while(nums[l]==nums[l-1] && l < nums.length - 1); //跳过相同的
         return l;
     }
 
