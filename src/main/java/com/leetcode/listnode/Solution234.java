@@ -88,15 +88,31 @@ public class Solution234 {
         return slow;
     }
 
+    public boolean isPail(ListNode head) {
+        Deque dq = new ArrayDeque();
+        ListNode cur = head;
+        while(cur!=null) {
+            dq.offer(cur.val);
+            cur = cur.next;
+        }
+        while(!dq.isEmpty()) {
+            if(dq.size() == 1) return true;
+            if(!(dq.pollFirst() == dq.pollLast())) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     @Test
     public void test() {
-        boolean palindrome = isPalindrome1(ListNodeHelper.stringToListNode("[0,0]"));
+        boolean palindrome = isPail(ListNodeHelper.stringToListNode("[0,0]"));
         Assert.assertTrue(palindrome);
     }
 
     @Test
     public void test1() {
-        boolean palindrome = isPalindrome1(ListNodeHelper.stringToListNode("[1,2,2,1]"));
+        boolean palindrome = isPail(ListNodeHelper.stringToListNode("[1,2,2,1]"));
         Assert.assertTrue(palindrome);
     }
 }

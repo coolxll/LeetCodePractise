@@ -19,7 +19,7 @@ public class Solution572 {
             return true;
         if(s == null && t != null)
             return false;
-        if(t == null ||s.val != t.val) {
+        if(t == null || s.val != t.val) { //t为null s不为null
             return false;
         } else {
             return isSubTreeWithRoot(s.left, t.left) && isSubTreeWithRoot(s.right, t.right);

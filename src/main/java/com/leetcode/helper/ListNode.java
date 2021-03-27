@@ -5,8 +5,8 @@ public class ListNode {
     public ListNode next;
     public ListNode(int x) { val = x; }
 
-    @Override
-    public String toString() {
-        return ListNodeHelper.listNodeToString(this);
-    }
+//    @Override
+//    public String toString() {
+//        return ListNodeHelper.listNodeToString(this);
+//    }
 }
