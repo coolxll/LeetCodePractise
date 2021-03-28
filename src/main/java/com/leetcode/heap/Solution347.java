@@ -44,8 +44,20 @@ public class Solution347 {
         }
         List<Integer> result = new ArrayList<>();
         Set<Map.Entry<Integer, Integer>> entries = freqMap.entrySet();
+        Comparator<Map.Entry<String, Integer>> byFreq = new Comparator<Map.Entry<String, Integer>>() {
+            @Override
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+                return o2.getValue() - o1.getValue();
+            }
+        };
+        Comparator<Map.Entry<String, Integer>> byDict = new Comparator<Map.Entry<String, Integer>>() {
+            @Override
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+                return o1.getKey().compareTo(o2.getKey());
+            }
+        };
         List<Map.Entry<Integer, Integer>> collect = entries.stream()
-                .sorted((o1,o2)->(o2.getValue() - o1.getValue())).collect(Collectors.toList());
+                .sorted(((o1, o2) -> (o2.getValue().compareTo(o1.getValue())))).collect(Collectors.toList());
         for (int i = 0; i < k; i++) {
             result.add(collect.get(i).getKey());
         }
