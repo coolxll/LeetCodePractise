@@ -64,22 +64,21 @@ public class LRU {
 
         private int capacity;
 
+        private HashMap<Integer,DLinkedNode> cacheMap;
+
+        private DLinkedNode head, tail;
+
         public LRUCache(int capacity) {
             this.capacity = capacity;
             this.cacheMap = new HashMap<>();
             this.head = new DLinkedNode();
             this.tail = new DLinkedNode();
-            head.next = tail;
+            head.next = tail; //head 是虚拟节点
             tail.prev = head;
         }
 
-
-
-        private HashMap<Integer,DLinkedNode> cacheMap;
-
-        private DLinkedNode head, tail;
-
         public void put(int key, int value) {
+            if(capacity == 0) return;
             DLinkedNode node = cacheMap.get(key);
             if (node == null) { //if not exist
                 DLinkedNode newNode = new DLinkedNode(key, value);
