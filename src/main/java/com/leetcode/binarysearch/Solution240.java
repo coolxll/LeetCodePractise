@@ -4,6 +4,11 @@ package com.leetcode.binarysearch;
  * Created by Conan on 2017/2/12.
  */
 
+import org.junit.Test;
+
+import java.util.Comparator;
+import java.util.HashSet;
+
 /**
  * 编写一个高效的算法来搜索 m x n 矩阵 matrix 中的一个目标值 target 。该矩阵具有以下特性：
  *
@@ -33,6 +38,12 @@ public class Solution240 {
                 return true;
             }
         }
+        new HashSet<Integer>().stream().max(Comparator.comparingInt(Integer::intValue)).get();
         return false;
+    }
+
+    @Test
+    public void t() {
+        System.out.println(Integer.toHexString(-1));
     }
 }
