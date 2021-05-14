@@ -31,7 +31,12 @@ public class Solution33 {
 
     @Test
     public void test() {
-        int search = search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0);
+        int search = search(new int[]{4, 5, 6, 7, 0, 1, 2}, 2);
+        Assert.assertEquals(6,search);
+        search = search(new int[]{4, 5, 6, 7, 0, 1, 2}, 0);
+        Assert.assertEquals(4,search);
+        search = search(new int[]{4, 5, 6, 7, 8, 0, 1, 2}, 8);
         Assert.assertEquals(4,search);
     }
+
 }
