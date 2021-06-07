@@ -77,45 +77,51 @@ public class Solution227 { //这个算法比较慢，但能正确算出答案
     }
 
     @Test
-        public void test () {
+        public void test() {
             int calculate = calculate("3+2*2");
             Assert.assertEquals(7, calculate);
         }
 
         @Test
-        public void test1 () {
+        public void test1() {
             int calculate = calculate("3/2");
             Assert.assertEquals(1, calculate);
         }
 
         @Test
-        public void test2 () {
+        public void test2() {
             int calculate = calculate(" 3+ 5 / 2 ");
             Assert.assertEquals(5, calculate);
         }
 
         @Test
-        public void test3 () {
+        public void test3() {
             int calculate = calculate("( 3+ (5 / 2) )");
             Assert.assertEquals(5, calculate);
         }
 
         @Test
-        public void test4 () {
+        public void test4() {
             int calculate = calculate("2-(5-6)");
             Assert.assertEquals(3, calculate);
         }
 
         @Test
-        public void test5 () {
+        public void test5() {
             int calculate = calculate("2*(5+5*2)/3+(6/2+8)");
             Assert.assertEquals(21, calculate);
         }
 
         @Test
-        public void test6 () {
+        public void test6() {
             int calculate = calculate("4+(4*(3/3*(1+2)+2))");
             Assert.assertEquals(24, calculate);
+        }
+
+        @Test
+        public void test7() {
+            int calculate = calculate("(2*(3-4))*5");
+            Assert.assertEquals(-10, calculate);
         }
 
     }

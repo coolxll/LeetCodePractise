@@ -27,6 +27,7 @@ public class RemoveDuplicates {
     public void test() {
         int[] arr = {1, 1, 2};
         int i = removeDuplicates(arr);
+        System.out.println(i);
         System.out.println(JSON.toJSON(arr));
     }
 }
