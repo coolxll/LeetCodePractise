@@ -30,7 +30,6 @@ public class FundStatEasyAli {
 
         Set<Map.Entry<String,Double>> set = fundMoney.entrySet();
 
-
         List<Map.Entry<String, Double>> list = set.stream().sorted(((o1, o2) -> (int) (o2.getValue() - o1.getValue()))).collect(Collectors.toList());
 
 //        Iterator iter = set.iterator();
